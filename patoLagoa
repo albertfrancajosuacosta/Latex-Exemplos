@@ -1,0 +1,22 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+\begin{document}
+\begin{tikzpicture}
+    % Lagoa
+    \fill[blue!40!cyan!50] (0,0) ellipse (3 and 1.3);
+
+    % Pato
+    \draw[fill=yellow!80!orange] (-1,0.3) circle (0.3); % corpo
+    \draw[fill=yellow!80!orange] (-1.4,0.45) circle (0.18); % cabeça
+    \draw[fill=orange] (-1.55,0.45) -- (-1.85,0.5) -- (-1.55,0.4); % bico
+    \fill (-1.45,0.5) circle (0.03); % olho
+
+    % Texto filosófico
+    \node at (1.6,0.8) {\small ``\emph{Quem sou eu na imensidão desta lagoa?}''};
+
+    % Onda dramática
+    \draw[blue!80, thick, decorate, decoration={snake, amplitude=1mm}]
+        (1,0) -- (2.8,0);
+\end{tikzpicture}
+\end{document}
